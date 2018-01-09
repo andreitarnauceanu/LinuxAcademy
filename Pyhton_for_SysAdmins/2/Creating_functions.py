@@ -1,10 +1,10 @@
 def Display(message, count=1):
-    for i in range(int(count)):
+    for i in range(count):
         print(message)
 
-message = input('Message: ')
-count = input('Count: ')
+message = raw_input('Message: ')
+count = raw_input('Count: ')
 if count != "":
-    Display(message, count)
+    Display(message, int(count))
 else:
     Display(message)
